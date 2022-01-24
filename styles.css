@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&family=Parisienne&family=Sriracha&family=The+Nautigal:wght@700&display=swap');
+
+body {
+	background-image: url(images/fond6.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	margin-top:70px;
+}
+
+h2 {
+	font-family: 'Merienda', cursive;
+	font-size: 35px;
+	text-shadow: 2px 2px 5px black;
+}
+
+h3 {
+	font-family: 'Merienda', cursive;
+	font-size: 25px;
+}
+	
+.progm {
+	font-family:'Merienda',cursive;
+	font-size:1em;
+}
+
+.header {
+	text-align: center;
+	padding: 50px;
+	margin:20px;
+	font-family: 'Parisienne', cursive;
+	font-size:60px;
+	text-shadow: 2px 2px 5px black;
+}
+
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgba(195, 244, 240, 0.7);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Sriracha', cursive;
+  font-size: 20px;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+ul.topnav li a:hover:not(.active) {background-image: linear-gradient(rgba(231, 248, 215, 0.8),rgba(195, 244, 240, 0.8));}
+
+ul.topnav li a.active {background-image: linear-gradient(rgba(195, 244, 240, 0.8), rgba(229, 215, 248, 0.8));}
+
+ul.topnav li.right {float: right;}
+
+
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-image: linear-gradient(rgba(231, 248, 215, 0.8),rgba(195, 244, 240, 0.8));
+  border: none;
+  border-radius: 15px;
+  box-shadow: 5px 5px #999;
+  font-family:'Sriracha',cursive;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+.button:hover {background-image: linear-gradient(rgba(195, 244, 240, 0.8), rgba(229, 215, 248, 0.8));}
+
+.button:active {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(229, 215, 248, 0.8));
+  box-shadow: 5px 5px #666;
+  transform: translateY(4px);
+}
+
+.but{
+display:flex;
+justify-content:space-around;
+}
+
+
+legend {
+	color:rgb(209, 171, 0);
+	text-shadow: 2px 2px 5px rgb(209, 171, 0);
+	text-align:center;
+	font-family: 'Merienda', cursive;
+}
+
+fieldset{
+	background-image:linear-gradient(rgba(195, 240, 239, 0.4), rgba(234, 247, 193, 0.4));
+	text-align:left;
+	max-width:600px;
+}
+
+.accueil, .site{
+	padding:20px;
+	margin:20px;
+	max-width:800px;
+	justify-content:center;
+	border: 5px solid #92F7D9;
+	border-radius: 12px;
+	background-image:linear-gradient(rgba(195, 240, 239, 0.6), rgba(246, 225, 241 , 0.8));
+}
+
+
+
+.formulaire, .programme {
+	padding:20px;
+	margin:20px;
+}
+
+.couple {
+	display: flex;
+	flex-direction:row;
+
+}
+
+
+.albon {
+	border: 5px solid #EAEAEA;
+	border-radius: 12px;
+	background-image:linear-gradient(rgba(195, 240, 239, 0.6), rgba(234, 247, 193, 0.4));
+	padding:20px;
+	margin:20px;
+	flex: 50%;
+}
+
+.gwent {
+	border: 5px solid #EAEAEA;
+	border-radius: 12px;
+	background-image:linear-gradient(rgba(249, 226, 239, 0.6), rgba(196, 247, 239, 0.4));
+	padding:20px;
+	margin:20px;
+	flex: 50%;
+}
+
+q {
+	font-style: italic;
+}
+
+.rencontre {
+	text-align:center;
+	padding: 10px;
+	margin:10px;
+}
+
+footer {
+	font-family:'Sriracha',cursive;
+	font-size:1.3em;
+	color:white;
+	padding:20px;
+	background-color: rgba(195, 244, 240, 0.7);
+	text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float:none;}
+}
+
+@media (max-width: 800px) {
+  .couple {
+    flex-direction: column;
+  }
+  .lum4, .plate {
+	  width:100%;
+  }
+  .formulaire {
+	  padding:5px;
+	  margin:5px;	 
+  }
+  body { 
+  margin-top:250px;
+  }
+  .header {
+  font-size: 35px;
+}
+
+}

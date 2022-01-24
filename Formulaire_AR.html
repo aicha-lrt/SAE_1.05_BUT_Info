@@ -1,0 +1,187 @@
+<!doctype html> 
+<html lang="ar">
+	<head>
+		<meta charset="utf8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>استمارة</title>
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	
+	<body>
+
+		
+
+		<ul class="topnav">
+			<li><a href="Accueil_AR.html">مسكن</a></li>
+			<li><a href="Programme_AR.html">برنامج</a></li>
+			<li><a class="active" href="Formulaire_AR.html">استمارة</a></li>
+			<li class="right"><a href="Nous_AR.html">معلومات عنا</a></li>
+		</ul>
+		
+		
+		<h2 style="padding:20px;">نموذج 📝</h2>
+		
+		<p style="padding:20px;">هنا نموذج معلومات صغير لملئه. سيسمح لنا ذلك بالتعرف عليك بشكل أفضل والاستعداد بشكل أفضل لوصولك إلى حفل زفافنا.</p>
+		<br>
+		
+		<div class="formulaire">
+		
+		
+		<form>
+
+		<fieldset>
+			<legend>معلومات عنك</legend>
+			<br>
+			
+			<label for="nom">أدخل أسمك:</label>
+			<input type="text" id="nom" name="nom" placeholder="اسمك" required="">
+			<br><br>
+			
+			<label for="pn">أدخل اسمك الأول:</label>
+			<input type="text" id="pn" name="prenom" placeholder="اسمك" required="">
+			<br><br>
+			
+			<label>حدد فئتك العمرية:</label><br>
+			<input type="radio" id="m25s" name="ageself" required="">
+			<label for="m25s">-25 سنة</label>
+			<input type="radio" id="e2560s" name="ageself" required="">
+			<label for="e2560s">25-60 سنة</label>
+			<input type="radio" id="p60s" name="ageself" required="">
+			<label for="p60s">+60 سنة</label>
+			<br><br>
+		
+			
+		</fieldset>
+		
+		<br><br>
+		
+
+		<fieldset>
+			<legend>رفقائك (أطفال ، أولياء أمور ، صهر ...)</legend>
+			<br>
+			
+			<label>هل ستحضر الأطفال؟</label><br>
+			<input type="radio" id="aney" name="aneyn" required="">
+			<label for="aney">نعم 
+				 <label for="nbe">(كم عدد؟)</label>
+				<input type="number" id="nbe" name="nbenft" min="1" placeholder="أدخل الرقم">
+				</label>
+			<input type="radio" id="anen" name="aneyn" required="">
+			<label for="anen">لا</label>
+			<br><br>
+			
+			
+			<label>➔ إذا كانت الإجابة بنعم ، فحدد فئاتهم العمرية</label><br>
+			<input type="checkbox" id="e03e" name="age">
+			<label for="e03e">0-3 سنوات</label>
+			<input type="checkbox" id="e38e" name="age">
+			<label for="e38e">3-8 سنوات</label>
+			<input type="checkbox" id="e812e" name="age">
+			<label for="e812e">8-12 سنة</label>
+			<input type="checkbox" id="p12e" name="age">
+			<label for="p12e">+12 سنة</label>
+			<br><br>
+			
+			
+			<label>هل سيرافقك الكبار؟</label><br>
+			<input type="radio" id="anay" name="anayn" required="">
+			<label for="anay">نعم
+				<label for="nba">(كم عدد؟)></label>
+				<input type="number" id="nba" name="nbadlt" min="1" placeholder="أدخل الرقم">
+				</label>
+			<input type="radio" id="anan" name="anayn" required="">
+			<label for="anan">لا</label>
+			<br><br>
+			
+			
+			<label>➔ إذا كانت الإجابة بنعم ، فحدد الفئات العمرية لرفاقك</label><br>
+			<input type="checkbox" id="e1825a" name="age">
+			<label for="e1825a">18-25 سنة</label>
+			<input type="checkbox" id="e2560a" name="age">
+			<label for="e2560a">25-60 سنة</label>
+			<input type="checkbox" id="p60a" name="age">
+			<label for="p60a">+60 سنة</label>
+			<br><br>
+		
+			
+		</fieldset>
+		
+		<br><br>
+		
+
+		<fieldset>
+			<legend>حضورك في حفل الزفاف</legend>
+			<br>
+			
+			<label for="tp"></label>وسائل النقل المستخدمة:
+			<input type="text" id="tp" name="tp" placeholder="قدم ، سيارة ، طائرة ، ..." required="">
+			<br><br>
+			
+			<label>سوف تحتاج إلى أن تكون مستضاف؟</label><br>
+			<input type="radio" id="hby" name="hbyn" required="">
+			<label for="hby">نعم</label>
+			<input type="radio" id="hbn" name="hbyn" required="">
+			<label for="hbn">لا</label>
+			<br><br>
+			
+			
+			<label>كم يوما تخطط للبقاء؟</label><br>
+			<input type="radio" id="day1" name="day12p" required="">
+			<label for="day1">يوم 1</label>
+			<input type="radio" id="day2" name="day12p" required="">
+			<label for="day2">2 أيام</label>
+			<input type="radio" id="dayp2" name="day12p" required="">
+			<label for="dayp2">+2 يوم</label>
+			<br><br>
+		
+		</fieldset>
+
+		
+		<br><br>
+
+		<fieldset>
+			<legend>غذاء</legend>
+			<br>
+			
+			<label>هل لديك حساسية تجاه الطعام أو عدم تحمله؟</label><br>
+			<textarea name="alg" rows="5" cols="30" placeholder="إذا لم يكن لديك واحد ، اتركه فارغًا"></textarea>
+			<br><br>
+			
+			<label>هل أنت نباتي أم نباتي؟</label><br>
+			<input type="radio" id="vgt" name="vg" required="">
+			<label for="vgt">نباتي</label>
+			<input type="radio" id="vga" name="vg" required="">
+			<label for="vga">أخيرا</label> 
+			<input type="radio" id="vgta" name="vg" required="">
+			<label for="vgta">الاثنين</label>
+			<input type="radio" id="nope" name="vg" required="">
+			<label for="nope">لا شيء</label>
+			<br><br> 
+			
+			
+			<label>هل توجد أطعمة / مشروبات لا يمكنك تناولها (لحم خنزير ، كحول ، إلخ)؟</label><br>
+			<textarea name="alm" rows="5" cols="30" placeholder="إذا لم يكن لديك واحد ، اتركه فارغًا"></textarea>
+			<br><br>
+			
+		</fieldset>
+		
+		<br><br>
+
+			<input type="submit" value="أرسل النموذج">
+		</form>
+		</div>
+		
+	<footer>
+		<p>اللغات الأخرى المتاحة</p><br/>
+		<div class="but">
+			<a href="Formulaire_FR.html" class="button">FR</a>
+			<a href="Formulaire_EN.html" class="button">EN</a>
+			<a href="Formulaire_IT.html"  class="button">IT</a>
+			<a href="Formulaire_ES.html"  class="button">ES</a>
+			<a href="Formulaire_AR.html"  class="button">AR</a>
+		</div>
+	</footer>
+
+	</body>
+
+</html>

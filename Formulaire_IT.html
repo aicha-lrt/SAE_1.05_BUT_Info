@@ -1,0 +1,187 @@
+<!doctype html> 
+<html lang="it"> 
+	<head>
+		<meta charset="utf8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Modulo</title>
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	
+	<body>
+
+		
+
+		<ul class="topnav">
+			<li><a href="Accueil_IT.html">Accoglienza</a></li>
+			<li><a href="Programme_IT.html">Programma</a></li>
+			<li><a class="active" href="Formulaire_IT.html">Modulo</a></li>
+			<li class="right"><a href="Nous_IT.html">Chi siamo</a></li>
+		</ul>
+		
+		
+		<h2 style="padding:20px;">Modulo 📝</h2>
+		
+		<p style="padding:20px;">Ecco un piccolo modulo informativo da compilare. Questo ci permetterà di conoscerti meglio e di preparare al meglio il tuo arrivo al nostro matrimonio.</p>
+		<br/>
+		
+		<div class="formulaire">
+		
+		
+		<form>
+
+		<fieldset>
+			<legend>Informazioni su di te</legend>
+			<br/>
+			
+			<label for="nom">Inserisci il tuo nome:</label>
+			<input type="text" id="nom" name="nom" placeholder="Il tuo nome" required>
+			<br/><br/>
+			
+			<label for="pn">Inserisci il tuo nome di battesimo: </label>
+			<input type="text" id="pn" name="prenom" placeholder="Il tuo nome" required>
+			<br/><br/>
+			
+			<label>Seleziona la tua fascia di età:</label><br/>
+			<input type="radio" id="m25s" name="ageself" required>
+			<label for="m25s">-25 anni </label>
+			<input type="radio" id="e2560s" name="ageself" required>
+			<label for="e2560s">25-60 anni </label>
+			<input type="radio" id="p60s" name="ageself" required>
+			<label for="p60s">+60 anni </label>
+			<br/><br/>
+		
+			
+		</fieldset>
+		
+		<br/><br/>
+		
+
+		<fieldset>
+			<legend>I tuoi compagni (figli, genitori, genero...)</legend>
+			<br/>
+			
+			<label>Hai intenzione di portare i bambini?</label><br/>
+			<input type="radio" id="aney" name="aneyn" required>
+			<label for="aney">Sì   
+				<label for="nbe">(quanti?)</label>
+				<input type="number" id="nbe" name="nbenft" min="1" placeholder="Inserisci il numero">
+				</label>
+			<input type="radio" id="anen" name="aneyn" required>
+			<label for="anen">No</label>
+			<br/><br/>
+			
+			
+			<label>➔ Se sì, seleziona i loro gruppi di età</label><br/>
+			<input type="checkbox" id="e03e" name="age">
+			<label for="e03e">0-3 anni </label>
+			<input type="checkbox" id="e38e" name="age">
+			<label for="e38e">3-8 anni </label>
+			<input type="checkbox" id="e812e" name="age">
+			<label for="e812e">8-12 anni </label>
+			<input type="checkbox" id="p12e" name="age">
+			<label for="p12e">+12 anni </label>
+			<br/><br/>
+			
+			
+			<label>Sarai accompagnato da adulti?</label><br/>
+			<input type="radio" id="anay" name="anayn" required>
+			<label for="anay">Sì 
+				<label for="nba">(quanti?)</label>
+				<input type="number" id="nba" name="nbadlt" min="1" placeholder="Inserisci il numero">
+				</label>
+			<input type="radio" id="anan" name="anayn" required>
+			<label for="anan">No</label>
+			<br/><br/>
+			
+			
+			<label>➔ Se sì, seleziona le fasce d'età dei tuoi accompagnatori</label><br/>
+			<input type="checkbox" id="e1825a" name="age">
+			<label for="e1825a">18-25 anni </label>
+			<input type="checkbox" id="e2560a" name="age">
+			<label for="e2560a">25-60 anni </label>
+			<input type="checkbox" id="p60a" name="age">
+			<label for="p60a">+60 anni </label>
+			<br/><br/>
+		
+			
+		</fieldset>
+		
+		<br/><br/>
+		
+
+		<fieldset>
+			<legend>La tua presenza al matrimonio</legend>
+			<br/>
+			
+			<label for="tp"></label>Mezzo di trasporto utilizzato:
+			<input type="text" id="tp" name="tp" placeholder="Piedi, macchina, aereo, ..." required>
+			<br/><br/>
+			
+			<label>Avrai bisogno di essere ospitato?</label><br/>
+			<input type="radio" id="hby" name="hbyn" required>
+			<label for="hby">Si</label>
+			<input type="radio" id="hbn" name="hbyn" required>
+			<label for="hbn">No</label>
+			<br/><br/>
+			
+			
+			<label>Quanti giorni pensi di rimanere?</label><br/>
+			<input type="radio" id="day1" name="day12p" required>
+			<label for="day1">1 giorno </label>
+			<input type="radio" id="day2" name="day12p" required>
+			<label for="day2">2 giorni</label>
+			<input type="radio" id="dayp2" name="day12p" required>
+			<label for="dayp2">+2 giorni</label>
+			<br/><br/>
+		
+		</fieldset>
+
+		
+		<br/><br/>
+
+		<fieldset>
+			<legend>Cibo</legend>
+			<br/>
+			
+			<label>Hai allergie o intolleranze alimentari?</label><br/>
+			<textarea name="alg" rows="5" cols="30" placeholder="Se non ne hai uno, lascia vuoto"></textarea>
+			<br/><br/>
+			
+			<label>Sei vegetariano o vegano?</label><br/>
+			<input type="radio" id="vgt" name="vg" required>
+			<label for="vgt">Vegetariano </label>
+			<input type="radio" id="vga" name="vg" required>
+			<label for="vga">Vegano</label> 
+			<input type="radio" id="vgta" name="vg" required>
+			<label for="vgta">Le due</label>
+			<input type="radio" id="nope" name="vg" required>
+			<label for="nope">Nessuno</label>
+			<br/><br/> 
+			
+			
+			<label>Ci sono cibi/bevande che non puoi mangiare (carne di maiale, alcol, ecc.)?</label><br/>
+			<textarea name="alm" rows="5" cols="30" placeholder="Se non ne hai uno, lascia vuoto"></textarea>
+			<br/><br/>
+			
+		</fieldset>
+		
+		<br/><br/>
+
+			<input type="submit" value="Invia il modulo">
+		</form>
+		</div>
+		
+	<footer>
+		<p>Altre lingue disponibili:</p><br/>
+		<div class="but">
+			<a href="Formulaire_FR.html" class="button">FR</a>
+			<a href="Formulaire_EN.html" class="button">EN</a>
+			<a href="Formulaire_IT.html"  class="button">IT</a>
+			<a href="Formulaire_ES.html"  class="button">ES</a>
+			<a href="Formulaire_AR.html"  class="button">AR</a>
+		</div>
+	</footer>
+
+	</body>
+
+</html>
